@@ -1,0 +1,9 @@
+streams:
+  camera1: rtsp://usuario:senha@192.168.1.50:554/stream
+
+api:
+  listen: ":1984"
+
+webrtc:
+  candidates:
+    - stun:stun.l.google.com:19302
