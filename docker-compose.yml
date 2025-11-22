@@ -22,7 +22,7 @@ services:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./go2rtc.htpasswd:/etc/nginx/go2rtc.htpasswd:ro
     ports:
-      - "1984:80"
+      - "${GO2RTC_PORT:-1984}:80"
     networks:
       - camnet
 
